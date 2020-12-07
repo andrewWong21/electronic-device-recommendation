@@ -1,0 +1,118 @@
+
+.itembody{
+    position:relative;
+    display:flex;
+    width:auto;
+    height:fit-content;
+    justify-content: center;
+
+}
+
+.image-section{
+    width:30%;
+    height: 80%;
+}
+
+.description-section{
+    width:50%;
+    height:80%;
+}
+
+.image-size{
+    position: relative;
+    width:90%;
+    height:90%;
+
+}
+
+.item-title{
+    position:relative;
+    float:left;
+    width:100%;
+    height:fit-content;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    word-break: keep-all;
+
+}
+
+.item-title-font{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.item-description{
+    height:fit-content;
+    width:600px;
+    overflow: hidden;
+}
+
+.itemfunction{
+    height:1500px;
+    width:auto;
+    background-color: rgb(202, 221, 238);
+}
+
+.coupon-display{
+    position:relative;
+    display:flex;
+    width:100%;
+    height:auto;
+    margin: 10px;
+
+}
+
+.coupon{
+    float: left;
+    width:20%;
+    height:fit-content;
+    padding-bottom: 20px;
+
+
+}
+
+.coupon-list{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.coupon-card{
+    padding: 5px;
+}
+
+.spec-and-coupon{
+    width:100%;
+    display:flex;
+    height:fit-content;
+    justify-content: center;
+
+}
+
+.specification-layout{
+    float: left;
+    width:60%;
+    height:fit-content;
+}
+
+.comment-and-feedback{
+    width:900px;
+    height:auto;
+    padding:10px;
+    align-items: center;
+
+}
+
+.compare-button{
+    width:fit-content;
+    height:fit-content;
+    margin-left: 40px;
+    margin-top: 5%;
+}
+
+#comment-layout{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,107 @@
+#content3{
+    float: left;
+    width: 100%;
+    height: 700px;
+    border-top: 1px solid #ccc;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+
+#category-title{
+    text-align: center;
+    font-size: 36px;
+    padding: 15px;
+}
+
+#category-layout{
+    position: relative;
+    width:80%;
+    height: 500px;
+    left:10%;
+}
+
+#top-row{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    
+}
+
+#category1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    background: url("../image/Apple_announce-iphone12pro_10132020.jpg.news_app_ed.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#category2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:2;
+    background: url("../image/best-gaming-laptops-with-strong-gpu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#category3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    background: url("../image/genesis-hero-left-wide-cryo-black.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#category4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    background: url("../image/X5TyA8uvkGXoNyjFzxcowS-1200-80.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bottom-row{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+#category5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:2;
+    background: url("../image/maxresdefault.jpg");
+    background-size: 100%;
+}
+#category6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    background: url("../image/1.-best-desktop-computers-768x512.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#category7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:2;
+    background: url("../image/4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.category-name{
+    color: white;
+    font-size: 24px;
+    text-decoration: underline;
+}

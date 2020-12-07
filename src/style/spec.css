@@ -1,0 +1,22 @@
+#item-specification-layout{
+    width: 100%;
+    height: fit-content;
+
+}
+#spec-table{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.spec-name{
+    width: 200px;
+    border: 1px solid #ccc;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.spec-content{
+    border: 1px solid #ccc;
+    padding: 10px;
+}

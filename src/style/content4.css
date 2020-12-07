@@ -1,0 +1,59 @@
+ #content4{
+     float: left;
+     width: 100%;
+     height: 600px;
+     border-top: 1px solid #ccc;
+     background: url("../image/pWjhOj3.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+ #content4-title-layout{
+     text-align: center;
+ }
+ #compare-title{
+     font-size: 36px;
+     padding: 10px;
+ }
+ #compare-layout{
+     width: 100%;
+     height: fit-content;
+     display: flex;
+     justify-content: center;
+ }
+ .compare-content{
+    width: 40%;
+    height: fit-content;
+    margin: 20px;
+    display: flex;
+    
+ }
+
+ .compare-item{
+     width: 50%;
+     height: 100%;
+
+ }
+
+ .compare-item-title-layout{
+     height: 60px;
+     margin: 10px;
+     overflow: hidden;
+ }
+
+ .compare-item-title{
+     width: fit-content;
+     height: 100%;
+ }
+
+ .compare-table{
+     table-layout: fixed;
+     word-wrap: break-word;
+     border-top: 1px solid #ccc;
+     width: 100%;
+ }
+
+ .compare-table td{
+     height: 60px;
+ }
+

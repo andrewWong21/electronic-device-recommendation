@@ -1,0 +1,36 @@
+#login-page-layout{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+}
+
+#login-content{
+    width: 30%;
+    height: 600px;
+    border: 1px solid #ccc;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+#login-content-title{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.login-text{
+    width: 80%;
+    margin-left: 10%;
+    padding: 1%;
+}
+
+#login-page-button{
+    padding: 5%;
+    margin-left: 65%;
+}
+
+#ask-for-register{
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+}
