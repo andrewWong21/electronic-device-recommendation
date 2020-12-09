@@ -1,0 +1,40 @@
+#recommendation-page-content-layout{
+    display: flex;
+    justify-content: center;
+}
+
+#recommendation-page-layout{
+    background-color: beige;
+    height: 700px;
+}
+
+#recommendation-page-title{
+    text-align: center;
+    font-size: 40px;
+    color: lightblue;
+    padding: 5px;
+}
+
+#recommendation-page-content{
+    width: 65%;
+    height: 300px;
+}
+.recommendation-page-item{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.recommendation-page-img{
+    border-radius: 20px;
+    width: 10%;
+}
+
+.recommendation-page-title{
+    border-left: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    
+}

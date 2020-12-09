@@ -25,9 +25,24 @@ body {
 }
 
 .container {
+  width: 70%;
   border: 4px black solid;
+  border-radius: 10px;
 }
 
 labelStyle {
   text-emphasis-style: initial;
+}
+
+#survey-page-title{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+}
+
+#survey-page-content-layout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

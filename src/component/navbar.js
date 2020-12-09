@@ -20,7 +20,7 @@ class Navbar extends React.Component{
                     <a className="nav-icon" href="#content5">
                         <SearchOutlined style={{ fontSize: '16px', color: 'black' }}></SearchOutlined>
                     </a>
-                    <a className="nav-icon">
+                    <a className="nav-icon" href="/survey">
                         <UserOutlined style={{ fontSize: '16px', color: 'black' }}/>
                     </a>
                     

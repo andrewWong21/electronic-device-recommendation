@@ -23,7 +23,7 @@ class LoginPage extends React.Component{
                     <Divider></Divider>
                     <div>
                     
-                        <form>
+                        <form method="post" action="/">
                             <div className="login-text">
                                 <TextField id="standard-basic" label="Username" type="text" fullWidth/>
                             </div>

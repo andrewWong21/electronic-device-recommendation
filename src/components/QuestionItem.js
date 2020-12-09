@@ -75,7 +75,7 @@ export class QuestionItem extends Component {
                     </select>
                 </div>
                 <div style={questionStyle}>
-                    <Button variant="contained" color="primary" type="submit" value="Submit"> Submit </Button>
+                    <Button variant="contained" color="primary" type="submit" value="Submit" formaction="/recommendation"> Submit </Button>
                 </div>
             </form>
         )

@@ -14,12 +14,16 @@
     
 }
 
-#sub-title{
+#sub-title-layout{
+    position: relative;
+    display: flex;
+}
+
+.sub-title{
     position: relative;
     text-align: center;
     font-size: 26px;
     color: gray;
-    top:-25px;
 }
 
 #product-table-layout{

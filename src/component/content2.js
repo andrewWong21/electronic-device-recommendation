@@ -113,7 +113,13 @@ class Content2 extends React.Component{
                     <h1 id="big-title">Know what you want</h1>
                 </div>
                 <div>
-                    <p id="sub-title">we can help you to decide</p>
+                    <p className="sub-title">we can help you to decide</p>
+                </div>
+                
+                <div id="table-title-layout">
+                    <div className="table-title"></div>
+                    <div className="table-title"></div>
+                    <div className="table-title"></div>
                 </div>
 
                 <div id="product-table-layout">
