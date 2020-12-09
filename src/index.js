@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App'
-import Main from './view/main';
-import Item from './view/item'
-import LoginPage from './view/loginpage'
-import RegisterPage from './view/registerpage'
-import Cellphone from './view/cellphone'
+import './index.css';
+import App from './App';
 
 ReactDOM.render(
-  <App></App>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
-
