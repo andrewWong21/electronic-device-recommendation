@@ -37,14 +37,14 @@ class RegisterPage extends React.Component{
                                 fullWidth
                                 /> 
                             </div>
-                            <div id="login-page-button"><Button variant="outlined">Login</Button></div>
+                            <div id="login-page-button"><Button variant="outlined" type="submit" formaction="/loginpage">Login</Button></div>
                         </form>
                     
                     </div>
 
                     <div id="ask-for-register">
                         <div>
-                            <a>Already have an account? Click to login</a>
+                            <a href="/loginpage">Already have an account? Click to login</a>
                         </div>
                         
                     </div>

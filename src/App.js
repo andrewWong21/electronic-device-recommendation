@@ -45,14 +45,17 @@ class App extends React.Component{
                     <Route exact path="/survey" render={props => (
                         <React.Fragment>
                             <Navbar></Navbar>
-                            <div id="survey-page-title-layout">
-                                <h1 id="survey-page-title">Survey</h1>
-                            </div>
-                            <div id="survey-page-content-layout">
-                                <div className="container">
-                                    <Questions />
+                            <div id="survey">
+                                <div id="survey-page-title-layout">
+                                    <h1 id="survey-page-title">Survey</h1>
+                                </div>
+                                <div id="survey-page-content-layout">
+                                    <div className="container">
+                                        <Questions />
+                                    </div>
                                 </div>
                             </div>
+                            
                         </React.Fragment>
                         )} />
                 </Router>

@@ -23,7 +23,7 @@ class LoginPage extends React.Component{
                     <Divider></Divider>
                     <div>
                     
-                        <form method="post" action="/">
+                        <form>
                             <div className="login-text">
                                 <TextField id="standard-basic" label="Username" type="text" fullWidth/>
                             </div>
@@ -36,14 +36,14 @@ class LoginPage extends React.Component{
                                 fullWidth
                                 /> 
                             </div>
-                            <div id="login-page-button"><Button variant="outlined" onClick={this.loginEvent}>Login</Button></div>
+                            <div id="login-page-button"><Button variant="outlined" type="submit" formaction="/">Login</Button></div>
                         </form>
                     
                     </div>
 
                     <div id="ask-for-register">
                         <div>
-                            <a>Don't have an account? Click to register</a>
+                            <a href="/registerpage">Don't have an account? Click to register</a>
                         </div>
                         
                     </div>
