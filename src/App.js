@@ -18,12 +18,20 @@ import './App.css';
 import Questions from './components/Questions';
 import Test2 from './components/pages/Test2';
 import Header from './components/layout/Header';
+import firebase, { auth, provider } from './firebase.js';
 
 
 class App extends React.Component{
 
     constructor(props){
         super(props)
+        this.state = {
+            username: '',
+            user: null,
+            isLogin: false,
+            //this.login = this.login.bind(this);
+            //this.logout = this.logout.bind(this); 
+        }
     }
     render(){
         return(
@@ -64,10 +72,13 @@ class App extends React.Component{
     }
 }
 
+
+
 const descStyle = {
     color: "cyan",
     textDecoration: "underline",
   }
-
+  
+const user = null;
 
 export default App
