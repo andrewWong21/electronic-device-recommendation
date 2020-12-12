@@ -1,5 +1,6 @@
 import React from 'react'
 import { Divider } from 'antd';
+import {auth, provider} from '../firebase';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import '../style/loginpage.css'
@@ -11,7 +12,9 @@ class LoginPage extends React.Component{
         this.state = {
             
         }
-    }
+        //loginEvent = this.loginEvent.bind(this);
+        //logoutEvent = this.logoutEvent.bind(this);
+    } 
 
     render(){
         return(
@@ -36,7 +39,7 @@ class LoginPage extends React.Component{
                                 fullWidth
                                 /> 
                             </div>
-                            <div id="login-page-button"><Button variant="outlined" type="submit" formaction="/">Login</Button></div>
+                            <div id="login-page-button"><Button onClick={this.loginEvent} variant="outlined" type="submit" formaction="/">Login</Button></div>
                         </form>
                     
                     </div>
@@ -52,9 +55,22 @@ class LoginPage extends React.Component{
             </div>
         )
     }
-    loginEvent =()=>(
-        this.props.history.push('/')
-    )
+    
+    logoutEvent(){
+      auth.signOut()
+        .then(() => {
+            this.setState({user: null});
+        });
+    }
+    
+    loginEvent(){
+      auth.signInWithPopup(provider) 
+        .then((result) => {
+          const user = result.user;
+          this.setState({ user: 'test'});
+          //this.props.setState({ isLogin: !isLogin});
+        });
+    }
 }
 
 export default LoginPage
