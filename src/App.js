@@ -26,21 +26,26 @@ class App extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            username: '',
-            user: null,
+            user: 'reset',
             isLogin: false,
-            //this.login = this.login.bind(this);
-            //this.logout = this.logout.bind(this); 
-        }
+        };
     }
     render(){
+        console.log("user: " + this.state.user);
+        console.log("isLogin: " + this.state.isLogin);
         return(
 
             <div>
                 <Router>
                     <Route path="/" exact component={Main}></Route>
                     <Route path="/item" exact component={Item}></Route>
-                    <Route path="/loginpage" exact component={LoginPage}></Route>
+                    <Route 
+                        path="/loginpage"
+                        exact
+                        render={
+                            (props) => (<LoginPage {...props} usr={this.state.user} logn={this.state.isLogin} logIn={this.loggedIn} />)
+                        }
+                    />
                     <Route path="/registerpage" exact component={RegisterPage}></Route>
                     <Route path="/category/cellphone" exact component={Cellphone}></Route>
                     <Route path="/category/laptop" exact component={Laptop}></Route>
@@ -72,13 +77,14 @@ class App extends React.Component{
     }
 }
 
-
-
 const descStyle = {
     color: "cyan",
     textDecoration: "underline",
-  }
+  };
   
-const user = null;
+function loggedIn(name){
+    this.setState({user: name});
+    this.setState({isLogin: true});
+}
 
 export default App
